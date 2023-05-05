@@ -1,0 +1,46 @@
+.nav-link, .navbar-brand{
+  color: white;
+  margin-left: 5vw;
+}
+
+.nav-link:active {
+  color: #b99999;
+}
+
+.nav-link:focus {
+  color: aqua;
+}
+.bi-person-circle {
+  border-radius: 50%;
+}
+
+i{
+  color: white;
+}
+i:hover {
+  cursor: pointer;
+}
+
+#person-icon {
+  width:4vw;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+span:hover {
+  cursor: pointer;
+  color: #74d3b2;
+}
+
+.center {
+  text-align: center;
+}

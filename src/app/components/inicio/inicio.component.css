@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 40vw;
+  height: 40vh;
+}
+
+.card {
+  width: 40vw;
+  box-shadow: 5px 10px 10px #b2b7b6;
+
+}

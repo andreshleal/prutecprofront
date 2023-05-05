@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg  bg-dark" data-bs-theme="dark">
+  <div class="container">
+    <a class="" routerLink=""></a>
+
+    <div class="" >
+      <ul class="navbar-nav ">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="formulario">Formulario</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="consulta">Consulta</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+
+  <i class="bi bi-person-circle" id="person-icon"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+</nav>
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="container" *ngIf="!logeado; else cardUsuario">
+      <div class="row" >
+        <div class="col forms" >
+         <span (click)="estado='registro'"> Registro </span> | <span (click)="estado='login'">Inicio Sesión</span>
+
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col">
+
+          <div *ngIf="estado == 'registro'">
+            <app-registro></app-registro>
+          </div>
+
+          <div *ngIf="estado == 'login'">
+            <app-login></app-login>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <ng-template #cardUsuario>
+      <app-sesion></app-sesion>
+    </ng-template>
+
+
+  </div>
+</div>

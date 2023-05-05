@@ -1,0 +1,25 @@
+
+.card {
+  width: 40vw;
+  margin-bottom: 25vh;
+  box-shadow: 5px 10px 10px #b2b7b6;
+}
+
+.col, .eliminar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-3 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bi-trash  {
+  color: red;
+}
+
+.bi-trash:hover {
+  cursor: pointer;
+}

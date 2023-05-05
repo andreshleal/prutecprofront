@@ -1,0 +1,14 @@
+<div class="mb-3">
+  <label for="emailLogin" class="form-label">Email</label>
+  <input [(ngModel)]="login.nombreUsuarioOrEmail"  type="email" class="form-control" id="emailLogin" placeholder="name@example.com">
+</div>
+
+<div class="mb-3">
+  <label for="passwordLogin" class="form-label">Contraseña</label>
+  <input [(ngModel)]="login.password" type="email" class="form-control" id="passwordLogin" placeholder="Contraseña">
+</div>
+
+<div class="mb-3">
+  <button (click)="inicioSesion()" class="btn btn-outline-info form-control">Enviar</button>
+</div>
+

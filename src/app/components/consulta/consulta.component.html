@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Documento</th>
+          <th scope="col">Email</th>
+          <th scope="col">Comentarios</th>
+          <th scope="col">Marca-favorita</th>
+          <th scope="col">Fecha realizada</th>
+          <th scope="col">Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let encuesta of listaEncuestas">
+          <th scope="row">{{encuesta.documento}}</th>
+          <td>{{encuesta.email}}</td>
+          <td>{{encuesta.comentarios.substring(0, 10)}}</td>
+          <td>{{encuesta.marcaFavorita}}</td>
+          <td>{{encuesta.createdAt.substring(0, 16)}}</td>
+          <td (click)="eliminar(encuesta.id)" class="eliminar"><i class="bi bi-trash"></i></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

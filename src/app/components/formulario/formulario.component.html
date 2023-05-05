@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+
+      <div class="card">
+        <div class="card-header">
+          <p>Encuesta</p>
+        </div>
+        <div class="texto">
+
+          <div class="mb-3 mt-3">
+            <label  class="form-label">Documento</label>
+            <input [(ngModel)]="datos.documento"  type="email" class="form-control" placeholder="">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input [(ngModel)]="datos.email" type="email" class="form-control"  placeholder="">
+          </div>
+
+          <div class="mb-3">
+            <label  class="form-label">Comentaios</label>
+            <input [(ngModel)]="datos.comentarios" type="email" class="form-control"  placeholder="">
+          </div>
+
+          <div class="mb-3">
+            <label  class="form-label">Marca Favorita</label>
+            <select class="form-select" aria-label="Default select example" (change)="asignarMarca($event)">
+              <option selected></option>
+              <option *ngFor="let marca of marcas" value="{{marca.nombre}}">{{marca.nombre}}</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <button (click)="enviarCuestionario()" class="btn btn-outline-info form-control">Enviar</button>
+          </div>
+
+
+
+
+
+
+        </div>
+        <div class="card-footer">
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
