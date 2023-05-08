@@ -18,8 +18,8 @@ export class UsuarioService {
   }
 
 
-  //URL:string = 'http://localhost:8080'
-  URL:string = 'http://168.138.233.89:8080'
+  URL:string = 'http://localhost:8080'
+  //URL:string = 'http://168.138.233.89:8080'
 
   constructor(private _http:HttpClient) { }
 
